@@ -1,4 +1,4 @@
-function Solution(numbers){
+function solution(numbers){
   const answer = [];
   let nums = numbers.split("");
 
@@ -17,7 +17,7 @@ function Solution(numbers){
         const copyArr = [...arr];
         copyArr.splice(i, 1);
         if(!answer.includes(+num) && isPrime(+num)){
-          answer.push(+newNum);
+          answer.push(+num);
         }
         per(copyArr, num);
       }
